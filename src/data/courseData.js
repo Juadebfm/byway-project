@@ -129,7 +129,7 @@ export const courseData = [
     coursePrice: 229.0,
   },
   {
-    id: 1,
+    id: 11,
     courseImg:
       "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=300&fit=crop",
     courseTitle: "Creative Writing Workshop",
@@ -380,3 +380,94 @@ export const customerReviewData = [
     customerJD: "Content Creator",
   },
 ];
+
+export const syllabusData = [
+  {
+    id: 1,
+    title: "Introduction to UX Design",
+    lessons: 5,
+    duration: "1 hour",
+  },
+  {
+    id: 2,
+    title: "Basics of User-Centered Design",
+    lessons: 5,
+    duration: "1 hour",
+  },
+  {
+    id: 3,
+    title: "Elements of User Experience",
+    lessons: 5,
+    duration: "1 hour",
+  },
+  {
+    id: 4,
+    title: "Visual Design Principles",
+    lessons: 5,
+    duration: "1 hour",
+  },
+];
+
+export const reviewsData = {
+  // Overall rating info
+  overallRating: 4.6,
+  totalReviews: 146951,
+
+  // Breakdown of ratings (how many people gave each star rating)
+  ratingBreakdown: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 10 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 3 },
+    { stars: 1, percentage: 2 },
+  ],
+
+  // Individual reviews from students
+  individualReviews: [
+    {
+      id: 1,
+      userName: "Mark Doe",
+      userImage: "/cta_female.svg",
+      rating: 5,
+      reviewDate: "22nd March, 2024",
+      reviewText:
+        "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.",
+    },
+    {
+      id: 2,
+      userName: "Sarah Johnson",
+      userImage: "/cta_female.svg",
+      rating: 5,
+      reviewDate: "20th March, 2024",
+      reviewText:
+        "Excellent course! The step-by-step approach made it easy to follow along. I particularly loved the hands-on projects and the feedback from the instructor. Highly recommend this course to anyone looking to get into UX design.",
+    },
+    {
+      id: 3,
+      userName: "Mike Chen",
+      userImage: "/cta_female.svg",
+      rating: 4,
+      reviewDate: "18th March, 2024",
+      reviewText:
+        "Great content and well-structured lessons. The instructor explains concepts clearly and provides practical examples. Could use a few more advanced topics, but overall a solid foundation course.",
+    },
+    {
+      id: 4,
+      userName: "Mike Chen",
+      userImage: "/cta_female.svg",
+      rating: 4,
+      reviewDate: "18th March, 2024",
+      reviewText:
+        "Great content and well-structured lessons. The instructor explains concepts clearly and provides practical examples. Could use a few more advanced topics, but overall a solid foundation course.",
+    },
+    {
+      id: 5,
+      userName: "Mike Chen",
+      userImage: "/cta_female.svg",
+      rating: 4,
+      reviewDate: "18th March, 2024",
+      reviewText:
+        "Great content and well-structured lessons. The instructor explains concepts clearly and provides practical examples. Could use a few more advanced topics, but overall a solid foundation course.",
+    },
+  ],
+};

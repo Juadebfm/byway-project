@@ -10,7 +10,7 @@ import CallToAction from "../components/CallToAction";
 const Homepage = () => {
   return (
     <main>
-      <div className="h-[calc(100vh-70px)] px-[80px]">
+      <div className="h-max lg:h-[calc(100vh-70px)] px-[30px] md:px-[80px]">
         <Swiper />
       </div>
       <Stats />

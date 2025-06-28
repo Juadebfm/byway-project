@@ -8,7 +8,7 @@ import { swiperData } from "../data/courseData";
 
 const SwiperContainer = () => {
   return (
-    <div className="h-full p-4">
+    <div className="h-max lg:h-full p-0 lg:p-4 mt-20 lg:mt-16">
       <Swiper
         // Optional parameters
         direction="horizontal"
@@ -29,19 +29,19 @@ const SwiperContainer = () => {
           disableOnInteraction: true, // Continue autoplay after user interactions
         }}
         // Additional styling
-        className="h-screen"
+        className="h-max"
       >
         {swiperData.map(({ heading, image, paragraph, buttonText }) => (
           <SwiperSlide key={image}>
-            <div className="grid grid-cols-2 items-center justify-center mt-[65px] gap-[100px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center mt-8 lg:mt-[65px] gap-[20px] lg:gap-[100px]">
               <div>
-                <h1 className="font-bold text-[40px] leading-[1.3] text-bywayTextDark mb-3">
+                <h1 className="font-bold text-[35px] lg:text-[40px] leading-[1.3] text-bywayTextDark mb-3">
                   {heading}
                 </h1>
-                <p className="leading-[1.6] text-bywayTextLight w-[90%]">
+                <p className="leading-[1.6] text-bywayTextLight w-full lg:w-[90%]">
                   {paragraph}
                 </p>
-                <button className="min-w-[219px] h-[53px] bg-bywayBlue mt-[24px] rounded-lg text-white px-6">
+                <button className="w-full lg:w-max h-[53px] bg-bywayBlue mt-[24px] rounded-lg text-white px-6">
                   {buttonText}
                 </button>
               </div>

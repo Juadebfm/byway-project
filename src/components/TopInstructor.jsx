@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { mentorData } from "../data/courseData";
 import { FaStar } from "react-icons/fa";
@@ -14,7 +14,7 @@ const TopInstructor = () => {
   }
 
   return (
-    <section className="mt-[60px] px-[80px]">
+    <section className="mt-[60px] px-[30px] lg:px-[80px]">
       <div className="flex items-end justify-between mb-[24px]">
         <h3 className="capitalize text-[24px] text-bywayTextDark font-[700]">
           Top instructors
@@ -29,7 +29,7 @@ const TopInstructor = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-4 items-center justify-between gap-[36px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-between gap-[36px]">
         {displayedMentors.map(
           ({
             id,
@@ -41,7 +41,7 @@ const TopInstructor = () => {
           }) => (
             <div
               key={id}
-              className="border border-[#E2E8F0] rounded-lg p-[18px] w-[300px]"
+              className="border border-[#E2E8F0] rounded-lg p-[18px] w-full md:w-[300px]"
             >
               <img
                 src={mentorImage}

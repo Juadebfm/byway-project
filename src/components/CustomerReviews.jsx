@@ -11,7 +11,7 @@ const CustomerReviews = () => {
   const swiperRef = useRef(null);
 
   return (
-    <section className="py-[60px] px-[80px] bg-gray-50 mt-[80px]">
+    <section className="py-[60px] px-[30px] lg:px-[80px] bg-gray-50 mt-[80px]">
       <div className="flex items-end justify-between mb-[40px]">
         <div>
           <h3 className="text-[32px] font-bold text-bywayTextDark mb-2 leading-none">
@@ -65,7 +65,7 @@ const CustomerReviews = () => {
             spaceBetween: 30,
           },
           1280: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
           },
         }}

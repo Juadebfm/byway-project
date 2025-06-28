@@ -4,8 +4,8 @@ import { topCategories } from "../data/courseData";
 
 const TopCategories = () => {
   return (
-    <section className="mt-[60px] px-[80px]">
-      <div className="flex items-end justify-between mb-[24px]">
+    <section className="mt-[60px] px-[30px] lg:px-[80px]">
+      <div className="flex items-center lg:items-end justify-between mb-[24px]">
         <h3 className="capitalize text-[24px] text-bywayTextDark font-[700]">
           Top categories
         </h3>
@@ -17,7 +17,7 @@ const TopCategories = () => {
           See All
         </Link>
       </div>
-      <div className="grid grid-cols-4 items-center justify-center gap-[36px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-[20px] lg:gap-[36px]">
         {topCategories.map(({ icon, category, courseCount }) => (
           <div
             key={category}

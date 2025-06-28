@@ -21,13 +21,13 @@ const ctaData = [
 
 const CallToAction = () => {
   return (
-    <section className="p-[80px] w-[90%] mx-auto">
-      <div className="grid grid-cols-2 items-center justify-center">
+    <section className="p-[30px] lg:p-[80px] w-full lg:w-[90%] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-10 lg:gap-0">
         <div>
           <img src="/cta_female.svg" alt="cta_female" />
         </div>
 
-        <div className="w-[90%] space-y-4">
+        <div className="w-full lg:w-[90%] space-y-4">
           <h3 className="text-black text-xl font-semibold leading-[1.5] capitalize">
             Become an instructor
           </h3>
@@ -41,8 +41,8 @@ const CallToAction = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-2 items-center justify-between mt-[60px]">
-        <div className="w-[90%] space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between mt-[60px] gap-10 lg:gap-0">
+        <div className="w-full lg:w-[90%] space-y-4">
           <h3 className="text-black text-xl font-semibold leading-[1.5] capitalize">
             Become an instructor
           </h3>
@@ -55,7 +55,7 @@ const CallToAction = () => {
             <FaArrowRight />
           </button>
         </div>
-        <div className="ml-28">
+        <div className="ml-0 lg:ml-28">
           <img src="/cta_male.svg" alt="cta_female" />
         </div>
       </div>

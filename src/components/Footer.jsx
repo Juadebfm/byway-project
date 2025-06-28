@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="min-h-[50vh] bg-[#1E293B] text-[#CBD5E1] p-[80px] grid grid-cols-[28.5%_20%_20%_28.5%] items-start justify-center gap-[2%]">
+    <footer className="min-h-screen lg:min-h-[50vh] bg-[#1E293B] text-[#CBD5E1] p-[30px] lg:p-[80px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[28.5%_20%_20%_28.5%] items-start justify-start lg:justify-center gap-[2%]">
       <div>
         <img src="/footer_logo.svg" alt="Company Logo" className="mb-[10px]" />
         <p className="text-[13px] leading-relaxed w-[90%]">
@@ -16,7 +16,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <ul className="space-y-3 pl-20">
+      <ul className="space-y-3 pl-0 lg:pl-20">
         <span className="text-lg text-white font-semibold leading-[1.6]">
           Get Help
         </span>
@@ -31,7 +31,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <ul className="space-y-3 pl-16">
+      <ul className="space-y-3 pl-0 lg:pl-16">
         <span className="text-lg text-white font-semibold leading-[1.6]">
           Programs
         </span>
