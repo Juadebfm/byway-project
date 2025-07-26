@@ -1,9 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { swiperData } from "../data/courseData";
 
 const SwiperContainer = () => {
@@ -13,10 +15,10 @@ const SwiperContainer = () => {
         // Optional parameters
         direction="horizontal"
         loop={true}
-        modules={[Autoplay]}
+        modules={[Autoplay, Navigation, Pagination]}
         // Pagination
         pagination={{
-          clickable: true,
+          clickable: false,
         }}
         // Navigation arrows
         navigation={true}
@@ -25,8 +27,8 @@ const SwiperContainer = () => {
           draggable: true,
         }}
         autoplay={{
-          delay: 5000, // 5 seconds between slides
-          disableOnInteraction: true, // Continue autoplay after user interactions
+          delay: 5000,
+          disableOnInteraction: true,
         }}
         // Additional styling
         className="h-max"
